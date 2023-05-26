@@ -45,6 +45,17 @@ header {
   color: black;
 }
 
+/* .author-text {
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'PT Sans', sans-serif;
+  color: black;
+} */
+.author-text {
+  text-align: center;
+}
+
 .controls {
   width: 100%;
   padding: 20px 50px;
@@ -152,3 +163,12 @@ header {
       -webkit-transform: scaleY(1.0);
     }
   }
+
+/* create quotes around the quote */
+blockquote p::before { 
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
